@@ -1,7 +1,5 @@
 "use client";
 
-import { Title } from "@radix-ui/react-dialog";
-import { University } from "lucide-react";
 import {
   FaHtml5,
   FaCss3,
@@ -70,7 +68,7 @@ const experience = {
     {
       company: "Freelance",
       position: "UI/UX Designer",
-      duration: "2021 - 2022",
+      duration: "2023 - present",
     },
   ],
 };

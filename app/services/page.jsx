@@ -2,23 +2,22 @@
 
 import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
-import { easeInOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const services = [
   {
     num: "01",
     title: "Web Development",
     description:
-      "As a full-stack web developer, I specialize in creating robust, scalable, and user-friendly websites and applications.",
+      "As a full-stack web developer, I specialize in creating robust, scalable, and user-friendly websites and applications that drive business growth and user satisfaction.",
       // I have the tools and experience to deliver top-notch results.
     href: "/contact",
   },
   {
     num: "02",
-    title: "SEO",
+    title: "UI/UX",
     description:
-      "I offer comprehensive SEO services designed to enhance your online visibility and drive organic traffic to your website.",
-      // My SEO strategies helped these brands achieve prominent rankings in search engine results, leading to significant growth in organic traffic and conversions.
+      "Creating intuitive and visually appealing user interfaces is key to ensuring a positive user experience. My approach to UI/UX design is User-Centered, Simplicity and Clarity, Consistency.",
     href: "/contact",
   },
   {
@@ -31,9 +30,10 @@ const services = [
   },
   {
     num: "04",
-    title: "UI/UX",
+    title: "SEO",
     description:
-      "Creating intuitive and visually appealing user interfaces is key to ensuring a positive user experience. My approach to UI/UX design is User-Centered, Simplicity and Clarity, Consistency.",
+      "I offer comprehensive SEO services designed to enhance your online visibility and drive organic traffic to your website.",
+      // My SEO strategies helped these brands achieve prominent rankings in search engine results, leading to significant growth in organic traffic and conversions.
     href: "/contact",
   },
 ];
