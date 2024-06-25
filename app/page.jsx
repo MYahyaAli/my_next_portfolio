@@ -17,18 +17,11 @@ const Home = () => {
               <span className="text-accent"> Mohammad Yahya </span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I am a graduate with a BSc in Computer Science (Honors) from the
+              I am a graduate with a BSc in Computer Science (Honors) from 
               Asia Pacific Institute of Information Technology, in partnership
-              with the University of Staffordshire.{" "}
-              {/*With a strong foundation in
-              web development and a passion for technology.I am eager to
-              contribute my skills and grow professionally. I have experience as
-              a Web Content Writer and Onsite Operation Assistant, which has
-              honed my abilities in both technical and operational domains. My
-              goal is to leverage my expertise in a dynamic company, where I can
-              apply my knowledge, continue learning, and make meaningful
-              contributions to the field of web development. */}
+              with the University of Staffordshire.
             </p>
+            
             {/* button and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button

@@ -9,29 +9,32 @@ const services = [
     num: "01",
     title: "Web Development",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam architecto, laboriosam iure illo in consequatur.",
-    href: "",
+      "As a full-stack web developer, I specialize in creating robust, scalable, and user-friendly websites and applications.",
+      // I have the tools and experience to deliver top-notch results.
+    href: "/contact",
   },
   {
     num: "02",
     title: "SEO",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam architecto, laboriosam iure illo in consequatur.",
-    href: "",
+      "I offer comprehensive SEO services designed to enhance your online visibility and drive organic traffic to your website.",
+      // My SEO strategies helped these brands achieve prominent rankings in search engine results, leading to significant growth in organic traffic and conversions.
+    href: "/contact",
   },
   {
     num: "03",
     title: "Content Optimization",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam architecto, laboriosam iure illo in consequatur.",
-    href: "",
+      "I specialize in optimizing various types of content to enhance visibility, engagement, and conversion rates.",
+      // Achieved increased traffic and enhanced user engagement through optimized product descriptions and landing pages.
+    href: "/contact",
   },
   {
     num: "04",
     title: "UI/UX",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam architecto, laboriosam iure illo in consequatur.",
-    href: "",
+      "Creating intuitive and visually appealing user interfaces is key to ensuring a positive user experience. My approach to UI/UX design is User-Centered, Simplicity and Clarity, Consistency.",
+    href: "/contact",
   },
 ];
 
@@ -76,7 +79,9 @@ const Services = () => {
                 >
                   {services.title}
                 </h2>
-                <p className="text-white/60">{services.description}</p>
+                <p className="text-white/60">
+                {services.description}
+                </p>
                 <div className="border-b border-white/20 w-full"></div>
               </div>
             );
