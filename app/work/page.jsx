@@ -54,7 +54,7 @@ const projects = [
     category: "User Data",
     title: "React Project",
     description:
-      "This project is about how to display a list of user on available on the database and also view their individual details seperately",
+      "This project is about how to display a list of user/users available on the database and also view their individual details seperately",
     stack: [{ name: "React.js" }, { name: "CSS" }, { name: "JavaScript" }],
     image: "/assets/work/thumb3.png",
     live: "https://spa-test-3cs.vercel.app/",
