@@ -31,7 +31,7 @@ const projects = [
       { name: "AWS" },
     ],
     image: "/assets/work/thumb1.png",
-    // live: "https://icars-app.vercel.app/",
+    live: "https://icars-app.vercel.app/",
     github: "https://github.com/MYahyaAli/icars-app",
   },
   {
@@ -46,7 +46,7 @@ const projects = [
       { name: "TypeScript" },
     ],
     image: "/assets/work/thumb2.png",
-    // live: "https://angular-calculator-two.vercel.app/",
+    live: "https://angular-calculator-two.vercel.app/",
     github: "https://github.com/MYahyaAli/asmr-ang-calc",
   },
   {
@@ -57,7 +57,7 @@ const projects = [
       "This project is about how to display a list of user/users available on the database and also view their individual details seperately",
     stack: [{ name: "React.js" }, { name: "CSS" }, { name: "JavaScript" }],
     image: "/assets/work/thumb3.png",
-    // live: "https://spa-test-3cs.vercel.app/",
+    live: "https://spa-test-3cs.vercel.app/",
     github: "https://github.com/MYahyaAli/spa-test-3cs",
   },
 ];
@@ -133,7 +133,7 @@ const Work = () => {
                 </Link>
 
                 {/* Github repo button */}
-                <Link href={project.live}>
+                <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
