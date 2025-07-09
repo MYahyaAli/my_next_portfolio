@@ -60,6 +60,34 @@ const projects = [
     live: "https://spa-test-3cs.vercel.app/",
     github: "https://github.com/MYahyaAli/spa-test-3cs",
   },
+  {
+    num: "04",
+    category: "Myhive",
+    title: "Website",
+    description:
+      "A fully functional informative react website, where the user can understand the company, also go throuhg thier services and reach out to them or book an appointment. The website is also connected to there own platform",
+    stack: [
+      { name: "React" },
+      { name: "Tailwind.css" },
+      { name: "TypeScript" },
+    ],
+    image: "/assets/work/myHive.png",
+    live: "https://www.myhive.biz/",
+  },
+  {
+    num: "05",
+    category: "Mk Ayurveda",
+    title: "Website",
+    description:
+      "A fully functional informative next.js website. Where there new clients or customers can learn about them reach out to them or gather information about the treatments and cure available.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind.css" },
+      { name: "TypeScript" },
+    ],
+    image: "/assets/work/mkAyur.png",
+    live: "https://www.mkayur.lk/",
+  },
 ];
 
 const Work = () => {
