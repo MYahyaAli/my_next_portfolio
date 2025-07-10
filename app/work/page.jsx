@@ -32,7 +32,7 @@ const projects = [
     ],
     image: "/assets/work/thumb1.png",
     live: "https://icars-app.vercel.app/",
-    github: "https://github.com/MYahyaAli/icars-app",
+    // github: "https://github.com/MYahyaAli/icars-app",
   },
   {
     num: "02",
@@ -47,7 +47,7 @@ const projects = [
     ],
     image: "/assets/work/thumb2.png",
     live: "https://angular-calculator-two.vercel.app/",
-    github: "https://github.com/MYahyaAli/asmr-ang-calc",
+    // github: "https://github.com/MYahyaAli/asmr-ang-calc",
   },
   {
     num: "03",
@@ -58,7 +58,7 @@ const projects = [
     stack: [{ name: "React.js" }, { name: "CSS" }, { name: "JavaScript" }],
     image: "/assets/work/thumb3.png",
     live: "https://spa-test-3cs.vercel.app/",
-    github: "https://github.com/MYahyaAli/spa-test-3cs",
+    // github: "https://github.com/MYahyaAli/spa-test-3cs",
   },
   {
     num: "04",
@@ -73,6 +73,7 @@ const projects = [
     ],
     image: "/assets/work/myHive.png",
     live: "https://www.myhive.biz/",
+    // github: "https://github.com/MYahyaAli/HiVE",
   },
   {
     num: "05",
@@ -87,6 +88,7 @@ const projects = [
     ],
     image: "/assets/work/mkAyur.png",
     live: "https://www.mkayur.lk/",
+    // github: "https://github.com/MYahyaAli/mkAyur",
   },
 ];
 
@@ -160,7 +162,7 @@ const Work = () => {
                   </TooltipProvider>
                 </Link>
 
-                {/* Github repo button */}
+                {/* Github repo button 
                 <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
@@ -172,7 +174,7 @@ const Work = () => {
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
-                </Link>
+                </Link>*/}
               </div>
             </div>
           </div>
