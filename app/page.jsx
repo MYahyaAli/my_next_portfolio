@@ -1,10 +1,15 @@
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
 import Stats from "@/components/Stats";
+import { projects } from "@/lib/projects";
+import { skillsList } from "@/lib/skills";
+import { getTotalGithubCommits } from "@/lib/github";
 // import { Button } from "@/components/ui/button";
 // import { FiDownload } from "react-icons/fi";
 
-const Home = () => {
+const Home = async () => {
+  const commits = await getTotalGithubCommits();
+
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -46,7 +51,11 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Stats />
+      <Stats
+        commits={commits}
+        projectsCount={projects.length}
+        technologiesCount={skillsList.length}
+      />
     </section>
   );
 };

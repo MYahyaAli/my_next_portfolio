@@ -1,27 +1,28 @@
 "use client";
 
 import CountUp from "react-countup";
+import { getYearsExperience } from "@/lib/experience";
 
-const stats = [
-  {
-    num: 2,
-    text: "Years of experience",
-  },
-  {
-    num: 12,
-    text: "Projects Completed",
-  },
-  {
-    num: 8,
-    text: "Technologies mastered",
-  },
-  {
-    num: 100,
-    text: "Code commits",
-  },
-];
+const Stats = ({ commits, projectsCount, technologiesCount }) => {
+  const stats = [
+    {
+      num: getYearsExperience(),
+      text: "Years of experience",
+    },
+    {
+      num: projectsCount,
+      text: "Projects Completed",
+    },
+    {
+      num: technologiesCount,
+      text: "Technologies mastered",
+    },
+    {
+      num: commits,
+      text: "Code commits",
+    },
+  ];
 
-const Stats = () => {
   return (
     <section className="pt-4 pb-12 xl:pt-0 xl:pb-0">
       <div className="container mx-auto">
@@ -34,8 +35,8 @@ const Stats = () => {
               >
                 <CountUp
                   end={item.num}
-                  duration={5}
-                  delay={2}
+                  duration={2}
+                  delay={0.3}
                   className="text-4xl xl:text-6xl font-extrabold"
                 />
                 <p

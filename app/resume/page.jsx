@@ -1,19 +1,7 @@
 "use client";
 
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaFigma,
-  FaNodeJs,
-  FaAws,
-  FaWordpress,
-  FaDatabase,
-} from "react-icons/fa";
-
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
-import { TbApi } from "react-icons/tb";
+import { skillsList } from "@/lib/skills";
+import { getYearsExperience } from "@/lib/experience";
 
 // about data
 const about = {
@@ -31,7 +19,7 @@ const about = {
     },
     {
       feildName: "Experience",
-      feildValue: "4+ years",
+      feildValue: `${getYearsExperience()}+ years`,
     },
     {
       feildName: "Nationality",
@@ -127,56 +115,7 @@ const skills = {
   title: "My skills",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cum sunt sit.",
-  SkillList: [
-    {
-      icon: <FaHtml5 />,
-      name: "Html5",
-    },
-    {
-      icon: <FaCss3 />,
-      name: "CSS3",
-    },
-    {
-      icon: <FaJs />,
-      name: "JavaScript",
-    },
-    {
-      icon: <FaReact />,
-      name: "React.js",
-    },
-    {
-      icon: <FaNodeJs />,
-      name: "Node.js",
-    },
-    {
-      icon: <SiNextdotjs />,
-      name: "Next.js",
-    },
-    {
-      icon: <SiTailwindcss />,
-      name: "Tailwind.css",
-    },
-    {
-      icon: <FaFigma />,
-      name: "Figma",
-    },
-    {
-      icon: <FaAws />,
-      name: "AWS",
-    },
-    {
-      icon: <FaWordpress />,
-      name: "WordPress",
-    },
-    {
-      icon: <FaDatabase />,
-      name: "SQL/NoSQL",
-    },
-    {
-      icon: <TbApi />,
-      name: "REST APIs",
-    },
-  ],
+  SkillList: skillsList,
 };
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -292,13 +231,14 @@ const Resume = () => {
                 </div>
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
                   {skills.SkillList.map((skill, index) => {
+                    const SkillIcon = skill.icon;
                     return (
                       <li key={index}>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
                             <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
                               <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                                {skill.icon}
+                                <SkillIcon />
                               </div>
                             </TooltipTrigger>
                             <TooltipContent>
