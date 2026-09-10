@@ -7,9 +7,13 @@ import {
   FaReact,
   FaFigma,
   FaNodeJs,
+  FaAws,
+  FaWordpress,
+  FaDatabase,
 } from "react-icons/fa";
 
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { TbApi } from "react-icons/tb";
 
 // about data
 const about = {
@@ -27,7 +31,7 @@ const about = {
     },
     {
       feildName: "Experience",
-      feildValue: "2 years",
+      feildValue: "4+ years",
     },
     {
       feildName: "Nationality",
@@ -56,19 +60,34 @@ const experience = {
     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci vero cumque ratione, magnam laboriosam rem?",
   items: [
     {
+      company: "WSpace",
+      position: "IT Executive & Administration",
+      duration: "04/2025 - Present",
+    },
+    {
+      company: "Zenith",
+      position: "Owner & Operations Manager",
+      duration: "01/2025 - Present",
+    },
+    {
+      company: "Myhive",
+      position: "IT Manager (Part-Time / Freelance)",
+      duration: "10/2024 - 01/2026",
+    },
+    {
+      company: "Amez Cloud",
+      position: "Intern Full Stack Developer",
+      duration: "08/2024 - 04/2025",
+    },
+    {
+      company: "Freelance",
+      position: "Technical Lead & Full Stack Developer",
+      duration: "07/2023 - Present",
+    },
+    {
       company: "Noon E-Commerce",
       position: "Web Content Writer and Onsite Operations Assistant",
       duration: "03/2022 - 10/2023",
-    },
-    {
-      company: "Freelance",
-      position: "Web Developer",
-      duration: "2022 - present",
-    },
-    {
-      company: "Freelance",
-      position: "UI/UX Designer",
-      duration: "2023 - present",
     },
   ],
 };
@@ -141,6 +160,22 @@ const skills = {
       icon: <FaFigma />,
       name: "Figma",
     },
+    {
+      icon: <FaAws />,
+      name: "AWS",
+    },
+    {
+      icon: <FaWordpress />,
+      name: "WordPress",
+    },
+    {
+      icon: <FaDatabase />,
+      name: "SQL/NoSQL",
+    },
+    {
+      icon: <TbApi />,
+      name: "REST APIs",
+    },
   ],
 };
 
@@ -162,7 +197,7 @@ const Resume = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+        transition: { delay: 0.3, duration: 0.4, ease: "easeIn" },
       }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >

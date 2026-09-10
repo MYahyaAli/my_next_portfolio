@@ -90,6 +90,30 @@ const projects = [
     live: "https://www.mkayur.lk/",
     // github: "https://github.com/MYahyaAli/mkAyur",
   },
+  {
+    num: "06",
+    category: "Kraftemi",
+    title: "WordPress Project",
+    description:
+      "Built and manage two WordPress sites for the same client: Kraftemi, an education company's business website, and a personal portfolio build at abbadfowzan.com. Handled everything from setup and design to ongoing site management.",
+    stack: [{ name: "WordPress" }, { name: "PHP" }, { name: "CSS" }],
+    image: "/assets/work/kraftemi.png",
+    live: "https://kraftemi.com/",
+  },
+  {
+    num: "07",
+    category: "Case Management",
+    title: "Legal Tech Project",
+    description:
+      "Directed digitization of a solo notary & attorney practice's paper-based workflow end to end: ran discovery, scoped a phased build (document drafting, deadline tracking, case tracking), commissioned data-protection and security research, and directed the technical build using AI-assisted tooling as the execution layer.",
+    stack: [
+      { name: "Product Scoping" },
+      { name: "Requirements & Compliance" },
+      { name: "AI-Assisted Delivery" },
+    ],
+    image: "/assets/work/legal-practice.png",
+    // Internal tool for a private practice — no public live link.
+  },
 ];
 
 const Work = () => {
@@ -107,7 +131,7 @@ const Work = () => {
       intial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+        transition: { delay: 0.3, duration: 0.4, ease: "easeIn" },
       }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
@@ -148,19 +172,21 @@ const Work = () => {
 
               {/* buttons */}
               <div className=" flex items-center gap-4">
-                {/* live project button */}
-                <Link href={project.live}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Live Project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {/* live project button (only when a public link exists) */}
+                {project.live && (
+                  <Link href={project.live}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Live Project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
 
                 {/* Github repo button 
                 <Link href={project.github}>
@@ -200,6 +226,7 @@ const Work = () => {
                         <Image
                           src={project.image}
                           fill
+                          sizes="(min-width: 1280px) 50vw, 100vw"
                           className="object-cover"
                           alt=""
                         />

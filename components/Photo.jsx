@@ -10,7 +10,7 @@ const Photo = () => {
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
-          transition: { delay: 2, duration: 0.4, ease: "easeIn" },
+          transition: { delay: 0.2, duration: 0.4, ease: "easeIn" },
         }}
       >
         {/* photo */}
@@ -18,14 +18,15 @@ const Photo = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
+            transition: { delay: 0.4, duration: 0.4, ease: "easeInOut" },
           }}
           className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
         >
           <Image
             src="/assets/photo.png"
             priority
-            quality={100}
+            quality={85}
+            sizes="(min-width: 1280px) 498px, 298px"
             fill
             alt="Mohammad Yahya"
             className="object-contain"
